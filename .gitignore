@@ -30,3 +30,13 @@
 *.exe
 *.out
 *.app
+
+.vs/
+
+# Interrogate db files
+*.in
+src/*_igate.cxx
+src/*_module.cxx
+
+# Build
+build*/
