@@ -33,10 +33,7 @@
 
 .vs/
 
-# Interrogate db files
+# Build Files
 *.in
-src/*_igate.cxx
-src/*_module.cxx
-
-# Build
-build*/
+source/interrogate_module.cpp
+source/interrogate_wrapper.cpp
