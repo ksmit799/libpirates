@@ -4,6 +4,9 @@
 #include "pandabase.h"
 #include "pandaNode.h"
 
+// Declare our notify category.
+NotifyCategoryDecl(SeaPatchNode, EXPORT_CLASS, EXPORT_TEMPL);
+
 static const int noise_table_size = 64;
 
 class SeaPatchNode : public PandaNode {

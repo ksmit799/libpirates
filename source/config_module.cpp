@@ -22,7 +22,6 @@ void init_libpirates() {
   initialized = true;
 
   // Init types.
-
   SeaPatchRoot::init_type();
   SeaPatchNode::init_type();
 
