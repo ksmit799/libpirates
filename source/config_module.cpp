@@ -1,5 +1,6 @@
 #include "config_module.h"
 
+#include "seaPatchRoot.h"
 #include "seaPatchNode.h"
 
 #include "dconfig.h"
@@ -13,12 +14,17 @@ ConfigureFn(config_libpirates) {
 
 void init_libpirates() {
   static bool initialized = false;
+
   if (initialized) {
     return;
   }
+
   initialized = true;
 
-  //SeaPatchNode::init_type();
+  // Init types.
+
+  SeaPatchRoot::init_type();
+  SeaPatchNode::init_type();
 
   return;
 }
